@@ -31,6 +31,7 @@ func Routers() {
 	v1.PUT("/book/:id", controllers.Put)
 
 	v1.POST("/signup", controllers.SignUp)
+	v1.POST("/login", controllers.Login)
 
 	app.Run(":" + port)
 }
